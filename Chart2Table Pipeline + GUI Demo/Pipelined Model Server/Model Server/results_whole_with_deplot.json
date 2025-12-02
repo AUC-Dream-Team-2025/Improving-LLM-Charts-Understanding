@@ -1,0 +1,24 @@
+{
+  "deplot_cot": {
+    "accuracy": 0.0,
+    "correct_count": 0,
+    "total": 1,
+    "avg_inference_time": 6.224711894989014,
+    "results": [
+      {
+        "id": "chart_0",
+        "question": "How many food item is shown in the bar graph?",
+        "predicted": "1. **Understand the Question:**\n   - The question asks how many food items are shown in the bar graph.\n\n2. **Analyze the Chart Visually:**\n   - The chart is a horizontal bar chart.\n   - The x-axis represents the long-term price index values.\n   - The y-axis lists different food items.\n   - There are 15 distinct bars, each representing a different food item.\n\n3. **Cross-Reference with Table Data:**\n   - The table data confirms that there are 15 entries, each corresponding to a food item.\n   - Each entry matches the labels on the y-axis of the chart.\n\n4. **Perform Calculations (if needed):**\n   - No calculations are required here as we are simply counting the number of food items.\n\n5. **Verify Your Answer:**\n   - The chart visually shows 15 bars, and the table data lists 15 food items.\n   - Both sources confirm the same count.\n\n6. **Provide Final Answer:**\n   - Final Answer: 15",
+        "ground_truth": [
+          "14"
+        ],
+        "correct": false,
+        "inference_time": 6.224711894989014,
+        "deplot_extraction_time": 10.295732498168945,
+        "total_time": 16.52044439315796,
+        "extracted_table": "Country | Long-term price index in food commodities, 1850-2015, World, 1934 Lamb | 103.7 Corn | 103.13 Barley | 102.46 Rye | 87.37 Beef | 85.27 Wheat | 83.73 Coffee | 82.2 Tea | 68.48 Peanuts | 64.71 ..."
+      }
+    ],
+    "avg_total_time": 16.52044439315796
+  }
+}

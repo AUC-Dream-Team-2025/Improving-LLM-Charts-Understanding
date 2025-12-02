@@ -1,0 +1,3893 @@
+{
+  "method": "pytorch_llm + paddlepaddle_api",
+  "description": "PyTorch (Qwen2.5-3B) LLM + PaddlePaddle (PP-Chart2Table) via REST API",
+  "accuracy": 52.0,
+  "correct": 52,
+  "total": 100,
+  "results": [
+    {
+      "question": "Are the number of bars on each tick of the Y-axis equal?\nYour response must be concise.",
+      "table_clean": "",
+      "headers": [],
+      "answer": "Yes",
+      "ground_truth": "Yes.",
+      "correct": false,
+      "method": "cot_sc",
+      "debug": {
+        "samples": [
+          "Yes",
+          "Yes",
+          "Yes",
+          "Yes",
+          "Yes"
+        ],
+        "strategy": "binary_mode",
+        "all": [
+          "Yes",
+          "Yes",
+          "Yes",
+          "Yes",
+          "Yes"
+        ]
+      },
+      "idx": 0
+    },
+    {
+      "question": "How many bars are there on the 2nd tick from the top?\nYour answer should be compact.",
+      "table_clean": "",
+      "headers": [],
+      "answer": "2",
+      "ground_truth": "2.",
+      "correct": true,
+      "method": "cot_sc",
+      "debug": {
+        "samples": [
+          "2",
+          "2",
+          "2",
+          "2",
+          "2"
+        ],
+        "all": [
+          "2",
+          "2",
+          "2",
+          "2",
+          "2"
+        ],
+        "normed": [
+          "2",
+          "2",
+          "2",
+          "2",
+          "2"
+        ],
+        "nums": [
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0
+        ],
+        "strategy": "numeric_cluster"
+      },
+      "idx": 1
+    },
+    {
+      "question": "How many bars are there on the 1st tick from the bottom?\nKeep it short and to the point.",
+      "table_clean": "",
+      "headers": [],
+      "answer": "2",
+      "ground_truth": "2.",
+      "correct": true,
+      "method": "cot_sc",
+      "debug": {
+        "samples": [
+          "2",
+          "2",
+          "2",
+          "2",
+          "2"
+        ],
+        "all": [
+          "2",
+          "2",
+          "2",
+          "2",
+          "2"
+        ],
+        "normed": [
+          "2",
+          "2",
+          "2",
+          "2",
+          "2"
+        ],
+        "nums": [
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0
+        ],
+        "strategy": "numeric_cluster"
+      },
+      "idx": 2
+    },
+    {
+      "question": "What is the label of the 1st group of bars from the top?\nOffer a terse response.",
+      "table_clean": "",
+      "headers": [],
+      "answer": "2000",
+      "ground_truth": "2000.",
+      "correct": true,
+      "method": "cot_sc",
+      "debug": {
+        "samples": [
+          "2000",
+          "2000",
+          "2000",
+          "2000",
+          "2000"
+        ],
+        "all": [
+          "2000",
+          "2000",
+          "2000",
+          "2000",
+          "2000"
+        ],
+        "normed": [
+          "2000",
+          "2000",
+          "2000",
+          "2000",
+          "2000"
+        ],
+        "nums": [
+          2000.0,
+          2000.0,
+          2000.0,
+          2000.0,
+          2000.0
+        ],
+        "strategy": "numeric_cluster"
+      },
+      "idx": 3
+    },
+    {
+      "question": "In how many cases, is the number of bars for a given year not equal to the number of legend labels?\nOffer a very short reply.",
+      "table_clean": "",
+      "headers": [],
+      "answer": "0",
+      "ground_truth": "0.",
+      "correct": true,
+      "method": "cot_sc",
+      "debug": {
+        "samples": [
+          "0",
+          "There are two rows and two legend labels which makes the number of bars for each year equal to the number of legend labels. Therefore, the answer is zero.",
+          "0",
+          "There is no case where the number of bars does not equal the number of legend labels since there are always two bars per year and two labels.",
+          "0"
+        ],
+        "all": [
+          "0",
+          "There are two rows and two legend labels which makes the number of bars for each year equal to the number of legend labels. Therefore, the answer is zero.",
+          "0",
+          "There is no case where the number of bars does not equal the number of legend labels since there are always two bars per year and two labels.",
+          "0"
+        ],
+        "normed": [
+          "0",
+          "there are two rows and two legend labels which makes the number of bars for each year equal to the number of legend labels. therefore the answer is zero.",
+          "0",
+          "there is no case where the number of bars does not equal the number of legend labels since there are always two bars per year and two labels.",
+          "0"
+        ],
+        "nums": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "strategy": "numeric_cluster"
+      },
+      "idx": 4
+    },
+    {
+      "question": "What is the percentage of undernourished female children in 1974?\nYour response must be concise.",
+      "table_clean": "",
+      "headers": [],
+      "answer": "0.9",
+      "ground_truth": "0.9.",
+      "correct": true,
+      "method": "cot_sc",
+      "debug": {
+        "samples": [
+          "0.85",
+          "0.9",
+          "0.9",
+          "0.9",
+          "0.9"
+        ],
+        "all": [
+          "0.85",
+          "0.9",
+          "0.9",
+          "0.9",
+          "0.9"
+        ],
+        "normed": [
+          "0.85",
+          "0.9",
+          "0.9",
+          "0.9",
+          "0.9"
+        ],
+        "nums": [
+          0.85,
+          0.9,
+          0.9,
+          0.9,
+          0.9
+        ],
+        "strategy": "numeric_cluster"
+      },
+      "idx": 5
+    },
+    {
+      "question": "Across all years, what is the maximum percentage of undernourished female children?\nYour answer should be compact.",
+      "table_clean": "",
+      "headers": [],
+      "answer": "0.9",
+      "ground_truth": "0.9.",
+      "correct": true,
+      "method": "cot_sc",
+      "debug": {
+        "samples": [
+          "0.9",
+          "0.9",
+          "1.1",
+          "0.9",
+          "0.9"
+        ],
+        "all": [
+          "0.9",
+          "0.9",
+          "1.1",
+          "0.9",
+          "0.9"
+        ],
+        "normed": [
+          "0.9",
+          "0.9",
+          "1.1",
+          "0.9",
+          "0.9"
+        ],
+        "nums": [
+          0.9,
+          0.9,
+          1.1,
+          0.9,
+          0.9
+        ],
+        "strategy": "numeric_cluster"
+      },
+      "idx": 6
+    },
+    {
+      "question": "Across all years, what is the minimum percentage of undernourished male children?\nEnsure brevity in your answer. ",
+      "table_clean": "",
+      "headers": [],
+      "answer": "0.5",
+      "ground_truth": "0.5.",
+      "correct": true,
+      "method": "cot_sc",
+      "debug": {
+        "samples": [
+          "0.5",
+          "12",
+          "0.5",
+          "0.5",
+          "0.5"
+        ],
+        "all": [
+          "0.5",
+          "12",
+          "0.5",
+          "0.5",
+          "0.5"
+        ],
+        "normed": [
+          "0.5",
+          "12",
+          "0.5",
+          "0.5",
+          "0.5"
+        ],
+        "nums": [
+          0.5,
+          12.0,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "strategy": "numeric_cluster"
+      },
+      "idx": 7
+    },
+    {
+      "question": "In which year was the percentage of undernourished male children maximum?\nYour response must be concise.",
+      "table_clean": "",
+      "headers": [],
+      "answer": "1974",
+      "ground_truth": "1974.",
+      "correct": true,
+      "method": "cot_sc",
+      "debug": {
+        "samples": [
+          "1974",
+          "1974",
+          "1974",
+          "1974",
+          "1974"
+        ],
+        "all": [
+          "1974",
+          "1974",
+          "1974",
+          "1974",
+          "1974"
+        ],
+        "normed": [
+          "1974",
+          "1974",
+          "1974",
+          "1974",
+          "1974"
+        ],
+        "nums": [
+          1974.0,
+          1974.0,
+          1974.0,
+          1974.0,
+          1974.0
+        ],
+        "strategy": "numeric_cluster"
+      },
+      "idx": 8
+    },
+    {
+      "question": "What is the total percentage of undernourished female children in the graph?\nOffer a terse response.",
+      "table_clean": "",
+      "headers": [],
+      "answer": "1.4",
+      "ground_truth": "1.4.",
+      "correct": true,
+      "method": "cot_sc",
+      "debug": {
+        "samples": [
+          "1",
+          "1.4",
+          "1.4",
+          "1.4",
+          "1.4"
+        ],
+        "all": [
+          "1",
+          "1.4",
+          "1.4",
+          "1.4",
+          "1.4"
+        ],
+        "normed": [
+          "1",
+          "1.4",
+          "1.4",
+          "1.4",
+          "1.4"
+        ],
+        "nums": [
+          1.0,
+          1.4,
+          1.4,
+          1.4,
+          1.4
+        ],
+        "strategy": "numeric_cluster"
+      },
+      "idx": 9
+    },
+    {
+      "question": "What is the difference between the percentage of undernourished male children in 2000 and the percentage of undernourished female children in 1974?\nProvide a short and direct response.",
+      "table_clean": "",
+      "headers": [],
+      "answer": "-0.4",
+      "ground_truth": "-0.4.",
+      "correct": true,
+      "method": "cot_sc",
+      "debug": {
+        "samples": [
+          "The chart lacks the necessary data to answer this question.",
+          "-0.4",
+          "40",
+          "-0.4",
+          "-0.4"
+        ],
+        "all": [
+          "The chart lacks the necessary data to answer this question.",
+          "-0.4",
+          "40",
+          "-0.4",
+          "-0.4"
+        ],
+        "normed": [
+          "the chart lacks the necessary data to answer this question.",
+          "-0.4",
+          "40",
+          "-0.4",
+          "-0.4"
+        ],
+        "nums": [
+          -0.4,
+          40.0,
+          -0.4,
+          -0.4
+        ],
+        "strategy": "numeric_cluster"
+      },
+      "idx": 10
+    },
+    {
+      "question": "In the year 2000, what is the difference between the percentage of undernourished female children and percentage of undernourished male children?\nProvide a succinct answer.",
+      "table_clean": "",
+      "headers": [],
+      "answer": "0.0",
+      "ground_truth": "0.",
+      "correct": true,
+      "method": "cot_sc",
+      "debug": {
+        "samples": [
+          "0.0",
+          "0.0",
+          "0.0",
+          "0.0",
+          "0.0"
+        ],
+        "all": [
+          "0.0",
+          "0.0",
+          "0.0",
+          "0.0",
+          "0.0"
+        ],
+        "normed": [
+          "0.0",
+          "0.0",
+          "0.0",
+          "0.0",
+          "0.0"
+        ],
+        "nums": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "strategy": "numeric_cluster"
+      },
+      "idx": 11
+    },
+    {
+      "question": "In how many years, is the percentage of undernourished female children greater than 0.4 %?\nYour answer should be compact.",
+      "table_clean": "",
+      "headers": [],
+      "answer": "1",
+      "ground_truth": "2.",
+      "correct": false,
+      "method": "cot_sc",
+      "debug": {
+        "samples": [
+          "1",
+          "1",
+          "1",
+          "2",
+          "1"
+        ],
+        "all": [
+          "1",
+          "1",
+          "1",
+          "2",
+          "1"
+        ],
+        "normed": [
+          "1",
+          "1",
+          "1",
+          "2",
+          "1"
+        ],
+        "nums": [
+          1.0,
+          1.0,
+          1.0,
+          2.0,
+          1.0
+        ],
+        "strategy": "numeric_cluster"
+      },
+      "idx": 12
+    },
+    {
+      "question": "Is the percentage of undernourished female children in 1974 less than that in 2000?\nKeep it short and to the point.",
+      "table_clean": "",
+      "headers": [],
+      "answer": "No",
+      "ground_truth": "No.",
+      "correct": false,
+      "method": "cot_sc",
+      "debug": {
+        "samples": [
+          "The 1974 percentage is higher than the 2000 percentage.",
+          "No",
+          "No",
+          "No",
+          "no"
+        ],
+        "strategy": "string_mode",
+        "all": [
+          "The 1974 percentage is higher than the 2000 percentage.",
+          "No",
+          "No",
+          "No",
+          "no"
+        ]
+      },
+      "idx": 13
+    },
+    {
+      "question": "What does the 2nd bar from the top in 2000 represents?\nProvide a succinct answer.",
+      "table_clean": "",
+      "headers": [],
+      "answer": "Female",
+      "ground_truth": "Female.",
+      "correct": false,
+      "method": "cot_sc",
+      "debug": {
+        "samples": [
+          "Female",
+          "Female",
+          "Female",
+          "Female",
+          "Female"
+        ],
+        "strategy": "string_mode",
+        "all": [
+          "Female",
+          "Female",
+          "Female",
+          "Female",
+          "Female"
+        ]
+      },
+      "idx": 14
+    },
+    {
+      "question": "What does the 2nd bar from the bottom in 2000 represents?\nYour answer should be compact.",
+      "table_clean": "",
+      "headers": [],
+      "answer": "Male",
+      "ground_truth": "Male.",
+      "correct": false,
+      "method": "cot_sc",
+      "debug": {
+        "samples": [
+          "Male",
+          "Male",
+          "Male",
+          "Male",
+          "Male"
+        ],
+        "strategy": "string_mode",
+        "all": [
+          "Male",
+          "Male",
+          "Male",
+          "Male",
+          "Male"
+        ]
+      },
+      "idx": 15
+    },
+    {
+      "question": "How many bars are there?\nYour answer should be very brief.",
+      "table_clean": "",
+      "headers": [],
+      "answer": "4",
+      "ground_truth": "4.",
+      "correct": true,
+      "method": "cot_sc",
+      "debug": {
+        "samples": [
+          "4",
+          "4",
+          "4",
+          "2",
+          "4"
+        ],
+        "all": [
+          "4",
+          "4",
+          "4",
+          "2",
+          "4"
+        ],
+        "normed": [
+          "4",
+          "4",
+          "4",
+          "2",
+          "4"
+        ],
+        "nums": [
+          4.0,
+          4.0,
+          4.0,
+          2.0,
+          4.0
+        ],
+        "strategy": "numeric_cluster"
+      },
+      "idx": 16
+    },
+    {
+      "question": "Are all the bars in the graph horizontal?\nMake the answer very short.",
+      "table_clean": "",
+      "headers": [],
+      "answer": "Yes",
+      "ground_truth": "Yes.",
+      "correct": false,
+      "method": "cot_sc",
+      "debug": {
+        "samples": [
+          "Yes",
+          "Yes",
+          "Yes",
+          "Yes",
+          "Yes"
+        ],
+        "strategy": "binary_mode",
+        "all": [
+          "Yes",
+          "Yes",
+          "Yes",
+          "Yes",
+          "Yes"
+        ]
+      },
+      "idx": 17
+    },
+    {
+      "question": "How many years are there in the graph?\nMake the answer very short.",
+      "table_clean": "",
+      "headers": [],
+      "answer": "2",
+      "ground_truth": "2.",
+      "correct": true,
+      "method": "cot_sc",
+      "debug": {
+        "samples": [
+          "2",
+          "2",
+          "2",
+          "2",
+          "2"
+        ],
+        "all": [
+          "2",
+          "2",
+          "2",
+          "2",
+          "2"
+        ],
+        "normed": [
+          "2",
+          "2",
+          "2",
+          "2",
+          "2"
+        ],
+        "nums": [
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0
+        ],
+        "strategy": "numeric_cluster"
+      },
+      "idx": 18
+    },
+    {
+      "question": "What is the difference between two consecutive major ticks on the X-axis?\nMake the answer very short.",
+      "table_clean": "",
+      "headers": [],
+      "answer": "0.2",
+      "ground_truth": "0.2.",
+      "correct": true,
+      "method": "cot_sc",
+      "debug": {
+        "samples": [
+          "0.2",
+          "0.2",
+          "0.2",
+          "0.2",
+          "0.2"
+        ],
+        "all": [
+          "0.2",
+          "0.2",
+          "0.2",
+          "0.2",
+          "0.2"
+        ],
+        "normed": [
+          "0.2",
+          "0.2",
+          "0.2",
+          "0.2",
+          "0.2"
+        ],
+        "nums": [
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ],
+        "strategy": "numeric_cluster"
+      },
+      "idx": 19
+    },
+    {
+      "question": "Are the values on the major ticks of X-axis written in scientific E-notation?\nEnsure brevity in your answer. ",
+      "table_clean": "",
+      "headers": [],
+      "answer": "no",
+      "ground_truth": "No.",
+      "correct": false,
+      "method": "cot_sc",
+      "debug": {
+        "samples": [
+          "no",
+          "No",
+          "no",
+          "No",
+          "No"
+        ],
+        "strategy": "binary_mode",
+        "all": [
+          "no",
+          "No",
+          "no",
+          "No",
+          "No"
+        ]
+      },
+      "idx": 20
+    },
+    {
+      "question": "How many legend labels are there?\nOffer a very short reply.",
+      "table_clean": "",
+      "headers": [],
+      "answer": "2",
+      "ground_truth": "2.",
+      "correct": true,
+      "method": "cot_sc",
+      "debug": {
+        "samples": [
+          "2",
+          "2",
+          "2",
+          "2",
+          "2"
+        ],
+        "all": [
+          "2",
+          "2",
+          "2",
+          "2",
+          "2"
+        ],
+        "normed": [
+          "2",
+          "2",
+          "2",
+          "2",
+          "2"
+        ],
+        "nums": [
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0
+        ],
+        "strategy": "numeric_cluster"
+      },
+      "idx": 21
+    },
+    {
+      "question": "What is the title of the graph?\nGive a very brief answer.",
+      "table_clean": "",
+      "headers": [],
+      "answer": "Prevalence of severe wasting in children of Singapore with age under 5 years",
+      "ground_truth": "Prevalence of severe wasting in children of Singapore with age under 5 years.",
+      "correct": true,
+      "method": "cot_sc",
+      "debug": {
+        "samples": [
+          "Prevalence of severe wasting in children of Singapore with age under 5 years",
+          "Prevalence of severe wasting in children of Singapore with age under 5 years",
+          "Prevalence of severe wasting in children of Singapore with age under 5 years",
+          "Prevalence of severe wasting in children of Singapore with age under 5 years",
+          "Prevalence of severe wasting in children of Singapore with age under 5 years"
+        ],
+        "all": [
+          "Prevalence of severe wasting in children of Singapore with age under 5 years",
+          "Prevalence of severe wasting in children of Singapore with age under 5 years",
+          "Prevalence of severe wasting in children of Singapore with age under 5 years",
+          "Prevalence of severe wasting in children of Singapore with age under 5 years",
+          "Prevalence of severe wasting in children of Singapore with age under 5 years"
+        ],
+        "normed": [
+          "prevalence of severe wasting in children of singapore with age under 5 years",
+          "prevalence of severe wasting in children of singapore with age under 5 years",
+          "prevalence of severe wasting in children of singapore with age under 5 years",
+          "prevalence of severe wasting in children of singapore with age under 5 years",
+          "prevalence of severe wasting in children of singapore with age under 5 years"
+        ],
+        "nums": [
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0
+        ],
+        "strategy": "numeric_cluster"
+      },
+      "idx": 22
+    },
+    {
+      "question": "What is the label or title of the X-axis?\nYour response must be concise.",
+      "table_clean": "",
+      "headers": [],
+      "answer": "The label of the X-axis is \"% of children under 5\".",
+      "ground_truth": " % of children under 5.",
+      "correct": true,
+      "method": "cot_sc",
+      "debug": {
+        "samples": [
+          "The x-axis label is % of children under 5.",
+          "The label of the X-axis is \"% of children under 5\".",
+          "The label of the X-axis is \"% of children under 5\".",
+          "% of children under 5",
+          "The label on the x-axis is \"% of children under 5\"."
+        ],
+        "all": [
+          "The x-axis label is % of children under 5.",
+          "The label of the X-axis is \"% of children under 5\".",
+          "The label of the X-axis is \"% of children under 5\".",
+          "% of children under 5",
+          "The label on the x-axis is \"% of children under 5\"."
+        ],
+        "normed": [
+          "the x-axis label is of children under 5.",
+          "the label of the x-axis is \" of children under 5\".",
+          "the label of the x-axis is \" of children under 5\".",
+          " of children under 5",
+          "the label on the x-axis is \" of children under 5\"."
+        ],
+        "nums": [
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0
+        ],
+        "strategy": "numeric_cluster"
+      },
+      "idx": 23
+    },
+    {
+      "question": "What is the label or title of the Y-axis?\nKeep it short and to the point.",
+      "table_clean": "",
+      "headers": [],
+      "answer": "Year",
+      "ground_truth": "Year.",
+      "correct": false,
+      "method": "cot_sc",
+      "debug": {
+        "samples": [
+          "The label of the Y-axis is \"Year\".",
+          "Year",
+          "Year",
+          "The label on the Y-axis is \"Year\".",
+          "Year"
+        ],
+        "strategy": "string_mode",
+        "all": [
+          "The label of the Y-axis is \"Year\".",
+          "Year",
+          "Year",
+          "The label on the Y-axis is \"Year\".",
+          "Year"
+        ]
+      },
+      "idx": 24
+    },
+    {
+      "question": "What is the  % of children under 5 of Female in 1974?\nMake the answer very short.",
+      "table_clean": "",
+      "headers": [],
+      "answer": "0.9",
+      "ground_truth": "0.9.",
+      "correct": true,
+      "method": "cot_sc",
+      "debug": {
+        "samples": [
+          "0.9",
+          "0.9",
+          "0.9",
+          "0.9",
+          "0.9"
+        ],
+        "all": [
+          "0.9",
+          "0.9",
+          "0.9",
+          "0.9",
+          "0.9"
+        ],
+        "normed": [
+          "0.9",
+          "0.9",
+          "0.9",
+          "0.9",
+          "0.9"
+        ],
+        "nums": [
+          0.9,
+          0.9,
+          0.9,
+          0.9,
+          0.9
+        ],
+        "strategy": "numeric_cluster"
+      },
+      "idx": 25
+    },
+    {
+      "question": "What is the  % of children under 5 in Male in 1974?\nKeep it short and to the point.",
+      "table_clean": "",
+      "headers": [],
+      "answer": "1.1",
+      "ground_truth": "1.1.",
+      "correct": true,
+      "method": "cot_sc",
+      "debug": {
+        "samples": [
+          "1.1",
+          "1.1",
+          "1.1",
+          "1.1",
+          "1.1"
+        ],
+        "all": [
+          "1.1",
+          "1.1",
+          "1.1",
+          "1.1",
+          "1.1"
+        ],
+        "normed": [
+          "1.1",
+          "1.1",
+          "1.1",
+          "1.1",
+          "1.1"
+        ],
+        "nums": [
+          1.1,
+          1.1,
+          1.1,
+          1.1,
+          1.1
+        ],
+        "strategy": "numeric_cluster"
+      },
+      "idx": 26
+    },
+    {
+      "question": "What is the  % of children under 5 in Female in 2000?\nProvide a short and direct response.",
+      "table_clean": "",
+      "headers": [],
+      "answer": "0.5",
+      "ground_truth": "0.5.",
+      "correct": true,
+      "method": "cot_sc",
+      "debug": {
+        "samples": [
+          "0.5",
+          "0.5",
+          "0.5",
+          "0.5",
+          "0.5"
+        ],
+        "all": [
+          "0.5",
+          "0.5",
+          "0.5",
+          "0.5",
+          "0.5"
+        ],
+        "normed": [
+          "0.5",
+          "0.5",
+          "0.5",
+          "0.5",
+          "0.5"
+        ],
+        "nums": [
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "strategy": "numeric_cluster"
+      },
+      "idx": 27
+    },
+    {
+      "question": "What is the  % of children under 5 in Male in 2000?\nOffer a very short reply.",
+      "table_clean": "",
+      "headers": [],
+      "answer": "0.5",
+      "ground_truth": "0.5.",
+      "correct": true,
+      "method": "cot_sc",
+      "debug": {
+        "samples": [
+          "0.5",
+          "0.5",
+          "0.5",
+          "0.5",
+          "0.5"
+        ],
+        "all": [
+          "0.5",
+          "0.5",
+          "0.5",
+          "0.5",
+          "0.5"
+        ],
+        "normed": [
+          "0.5",
+          "0.5",
+          "0.5",
+          "0.5",
+          "0.5"
+        ],
+        "nums": [
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "strategy": "numeric_cluster"
+      },
+      "idx": 28
+    },
+    {
+      "question": "Across all years, what is the maximum  % of children under 5 in Female?\nOffer a very short reply.",
+      "table_clean": "",
+      "headers": [],
+      "answer": "0.9",
+      "ground_truth": "0.9.",
+      "correct": true,
+      "method": "cot_sc",
+      "debug": {
+        "samples": [
+          "1974",
+          "0.9",
+          "0.9",
+          "0.9",
+          "0.9"
+        ],
+        "all": [
+          "1974",
+          "0.9",
+          "0.9",
+          "0.9",
+          "0.9"
+        ],
+        "normed": [
+          "1974",
+          "0.9",
+          "0.9",
+          "0.9",
+          "0.9"
+        ],
+        "nums": [
+          1974.0,
+          0.9,
+          0.9,
+          0.9,
+          0.9
+        ],
+        "strategy": "numeric_cluster"
+      },
+      "idx": 29
+    },
+    {
+      "question": "Across all years, what is the maximum  % of children under 5 in Male?\nKeep it short and to the point.",
+      "table_clean": "",
+      "headers": [],
+      "answer": "1974",
+      "ground_truth": "1.1.",
+      "correct": false,
+      "method": "cot_sc",
+      "debug": {
+        "samples": [
+          "1974",
+          "1974",
+          "1974",
+          "1974",
+          "The highest value is in 1974 with 1.1."
+        ],
+        "all": [
+          "1974",
+          "1974",
+          "1974",
+          "1974",
+          "The highest value is in 1974 with 1.1."
+        ],
+        "normed": [
+          "1974",
+          "1974",
+          "1974",
+          "1974",
+          "the highest value is in 1974 with 1.1."
+        ],
+        "nums": [
+          1974.0,
+          1974.0,
+          1974.0,
+          1974.0,
+          1974.0
+        ],
+        "strategy": "numeric_cluster"
+      },
+      "idx": 30
+    },
+    {
+      "question": "Across all years, what is the minimum  % of children under 5 in Female?\nGive a very brief answer.",
+      "table_clean": "",
+      "headers": [],
+      "answer": "12",
+      "ground_truth": "0.5.",
+      "correct": false,
+      "method": "cot_sc",
+      "debug": {
+        "samples": [
+          "12",
+          "2018",
+          "2000",
+          "2020",
+          "0.5"
+        ],
+        "all": [
+          "12",
+          "2018",
+          "2000",
+          "2020",
+          "0.5"
+        ],
+        "normed": [
+          "12",
+          "2018",
+          "2000",
+          "2020",
+          "0.5"
+        ],
+        "nums": [
+          12.0,
+          2018.0,
+          2000.0,
+          2020.0,
+          0.5
+        ],
+        "strategy": "numeric_cluster"
+      },
+      "idx": 31
+    },
+    {
+      "question": "Across all years, what is the minimum  % of children under 5 in Male?\nOffer a very short reply.",
+      "table_clean": "",
+      "headers": [],
+      "answer": "0.5",
+      "ground_truth": "0.5.",
+      "correct": true,
+      "method": "cot_sc",
+      "debug": {
+        "samples": [
+          "0.5",
+          "The minimum value for \"Male\" across all years is found by identifying the shortest bar in the chart, which corresponds to the year 2000 with a value of 0.5%.",
+          "0.5",
+          "0.5",
+          "2000"
+        ],
+        "all": [
+          "0.5",
+          "The minimum value for \"Male\" across all years is found by identifying the shortest bar in the chart, which corresponds to the year 2000 with a value of 0.5%.",
+          "0.5",
+          "0.5",
+          "2000"
+        ],
+        "normed": [
+          "0.5",
+          "the minimum value for \"male\" across all years is found by identifying the shortest bar in the chart which corresponds to the year 2000 with a value of 0.5.",
+          "0.5",
+          "0.5",
+          "2000"
+        ],
+        "nums": [
+          0.5,
+          2000.0,
+          0.5,
+          0.5,
+          2000.0
+        ],
+        "strategy": "numeric_cluster"
+      },
+      "idx": 32
+    },
+    {
+      "question": "What is the total  % of children under 5 in Female in the graph?\nProvide a short and direct response.",
+      "table_clean": "",
+      "headers": [],
+      "answer": "1.4",
+      "ground_truth": "1.4.",
+      "correct": true,
+      "method": "cot_sc",
+      "debug": {
+        "samples": [
+          "1.4",
+          "1.4",
+          "1.4",
+          "Cannot be determined from the chart",
+          "1.4"
+        ],
+        "all": [
+          "1.4",
+          "1.4",
+          "1.4",
+          "Cannot be determined from the chart",
+          "1.4"
+        ],
+        "normed": [
+          "1.4",
+          "1.4",
+          "1.4",
+          "cannot be determined from the chart",
+          "1.4"
+        ],
+        "nums": [
+          1.4,
+          1.4,
+          1.4,
+          1.4
+        ],
+        "strategy": "numeric_cluster"
+      },
+      "idx": 33
+    },
+    {
+      "question": "What is the total  % of children under 5 in Male in the graph?\nKeep it short and to the point.",
+      "table_clean": "",
+      "headers": [],
+      "answer": "1.6",
+      "ground_truth": "1.6.",
+      "correct": true,
+      "method": "cot_sc",
+      "debug": {
+        "samples": [
+          "1.6",
+          "1.6",
+          "1.6",
+          "1.6",
+          "1.6"
+        ],
+        "all": [
+          "1.6",
+          "1.6",
+          "1.6",
+          "1.6",
+          "1.6"
+        ],
+        "normed": [
+          "1.6",
+          "1.6",
+          "1.6",
+          "1.6",
+          "1.6"
+        ],
+        "nums": [
+          1.6,
+          1.6,
+          1.6,
+          1.6,
+          1.6
+        ],
+        "strategy": "numeric_cluster"
+      },
+      "idx": 34
+    },
+    {
+      "question": "What is the ratio of the  % of children under 5 of Female in 1974 to that in 2000?\nProvide a short and direct response.",
+      "table_clean": "",
+      "headers": [],
+      "answer": "1.8",
+      "ground_truth": "1.8.",
+      "correct": true,
+      "method": "cot_sc",
+      "debug": {
+        "samples": [
+          "1.8",
+          "1.8",
+          "1.8",
+          "1.8",
+          "2.2"
+        ],
+        "all": [
+          "1.8",
+          "1.8",
+          "1.8",
+          "1.8",
+          "2.2"
+        ],
+        "normed": [
+          "1.8",
+          "1.8",
+          "1.8",
+          "1.8",
+          "2.2"
+        ],
+        "nums": [
+          1.8,
+          1.8,
+          1.8,
+          1.8,
+          2.2
+        ],
+        "strategy": "numeric_cluster"
+      },
+      "idx": 35
+    },
+    {
+      "question": "What is the ratio of the  % of children under 5 of Male in 1974 to that in 2000?\nEnsure brevity in your answer. ",
+      "table_clean": "",
+      "headers": [],
+      "answer": "2.2",
+      "ground_truth": "2.2.",
+      "correct": true,
+      "method": "cot_sc",
+      "debug": {
+        "samples": [
+          "2.2",
+          "2.2",
+          "2.2",
+          "2.2",
+          "2.2"
+        ],
+        "all": [
+          "2.2",
+          "2.2",
+          "2.2",
+          "2.2",
+          "2.2"
+        ],
+        "normed": [
+          "2.2",
+          "2.2",
+          "2.2",
+          "2.2",
+          "2.2"
+        ],
+        "nums": [
+          2.2,
+          2.2,
+          2.2,
+          2.2,
+          2.2
+        ],
+        "strategy": "numeric_cluster"
+      },
+      "idx": 36
+    },
+    {
+      "question": "How many different coloured bars are there?\nGive a very brief answer.",
+      "table_clean": "",
+      "headers": [],
+      "answer": "3",
+      "ground_truth": "3.",
+      "correct": true,
+      "method": "cot_sc",
+      "debug": {
+        "samples": [
+          "3",
+          "The chart has three different colored bars representing Lower middle income, Jamaica, and Morocco.",
+          "3",
+          "The chart has three different colored bars representing Lower middle income, Jamaica, and Morocco.",
+          "3"
+        ],
+        "all": [
+          "3",
+          "The chart has three different colored bars representing Lower middle income, Jamaica, and Morocco.",
+          "3",
+          "The chart has three different colored bars representing Lower middle income, Jamaica, and Morocco.",
+          "3"
+        ],
+        "normed": [
+          "3",
+          "the chart has three different colored bars representing lower middle income jamaica and morocco.",
+          "3",
+          "the chart has three different colored bars representing lower middle income jamaica and morocco.",
+          "3"
+        ],
+        "nums": [
+          3.0,
+          3.0,
+          3.0
+        ],
+        "strategy": "numeric_cluster"
+      },
+      "idx": 37
+    },
+    {
+      "question": "How many groups of bars are there?\nProvide a short and direct response.",
+      "table_clean": "",
+      "headers": [],
+      "answer": "3",
+      "ground_truth": "3.",
+      "correct": true,
+      "method": "cot_sc",
+      "debug": {
+        "samples": [
+          "3",
+          "3",
+          "3",
+          "3",
+          "3"
+        ],
+        "all": [
+          "3",
+          "3",
+          "3",
+          "3",
+          "3"
+        ],
+        "normed": [
+          "3",
+          "3",
+          "3",
+          "3",
+          "3"
+        ],
+        "nums": [
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0
+        ],
+        "strategy": "numeric_cluster"
+      },
+      "idx": 38
+    },
+    {
+      "question": "Are the number of bars per tick equal to the number of legend labels?\nYour answer should be compact.",
+      "table_clean": "",
+      "headers": [],
+      "answer": "yes",
+      "ground_truth": "Yes.",
+      "correct": false,
+      "method": "cot_sc",
+      "debug": {
+        "samples": [
+          "yes",
+          "Yes",
+          "yes",
+          "Yes",
+          "Yes"
+        ],
+        "strategy": "binary_mode",
+        "all": [
+          "yes",
+          "Yes",
+          "yes",
+          "Yes",
+          "Yes"
+        ]
+      },
+      "idx": 39
+    },
+    {
+      "question": "How many bars are there on the 1st tick from the top?\nProvide a short and direct response.",
+      "table_clean": "",
+      "headers": [],
+      "answer": "3",
+      "ground_truth": "3.",
+      "correct": true,
+      "method": "cot_sc",
+      "debug": {
+        "samples": [
+          "3",
+          "3",
+          "3",
+          "3",
+          "3"
+        ],
+        "all": [
+          "3",
+          "3",
+          "3",
+          "3",
+          "3"
+        ],
+        "normed": [
+          "3",
+          "3",
+          "3",
+          "3",
+          "3"
+        ],
+        "nums": [
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0
+        ],
+        "strategy": "numeric_cluster"
+      },
+      "idx": 40
+    },
+    {
+      "question": "In how many cases, is the number of bars for a given year not equal to the number of legend labels?\nOffer a very short reply.",
+      "table_clean": "",
+      "headers": [],
+      "answer": "0",
+      "ground_truth": "0.",
+      "correct": true,
+      "method": "cot_sc",
+      "debug": {
+        "samples": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "all": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "normed": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "nums": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "strategy": "numeric_cluster"
+      },
+      "idx": 41
+    },
+    {
+      "question": "Across all years, what is the minimum percentage of children who received treatment for diarrhoea  in Morocco?\nYour response must be concise.",
+      "table_clean": "",
+      "headers": [],
+      "answer": "14",
+      "ground_truth": "14.",
+      "correct": true,
+      "method": "cot_sc",
+      "debug": {
+        "samples": [
+          "1989",
+          "14",
+          "14",
+          "14",
+          "1989"
+        ],
+        "all": [
+          "1989",
+          "14",
+          "14",
+          "14",
+          "1989"
+        ],
+        "normed": [
+          "1989",
+          "14",
+          "14",
+          "14",
+          "1989"
+        ],
+        "nums": [
+          1989.0,
+          14.0,
+          14.0,
+          14.0,
+          1989.0
+        ],
+        "strategy": "numeric_cluster"
+      },
+      "idx": 42
+    },
+    {
+      "question": "In which year was the percentage of children who received treatment for diarrhoea  in Jamaica maximum?\nGive a very brief answer.",
+      "table_clean": "",
+      "headers": [],
+      "answer": "1989",
+      "ground_truth": "1989.",
+      "correct": true,
+      "method": "cot_sc",
+      "debug": {
+        "samples": [
+          "1989",
+          "1989",
+          "1989",
+          "1989",
+          "1989"
+        ],
+        "all": [
+          "1989",
+          "1989",
+          "1989",
+          "1989",
+          "1989"
+        ],
+        "normed": [
+          "1989",
+          "1989",
+          "1989",
+          "1989",
+          "1989"
+        ],
+        "nums": [
+          1989.0,
+          1989.0,
+          1989.0,
+          1989.0,
+          1989.0
+        ],
+        "strategy": "numeric_cluster"
+      },
+      "idx": 43
+    },
+    {
+      "question": "What is the total percentage of children who received treatment for diarrhoea  in Lower middle income in the graph?\nEnsure brevity in your answer. ",
+      "table_clean": "",
+      "headers": [],
+      "answer": "84",
+      "ground_truth": "85.19.",
+      "correct": false,
+      "method": "cot_sc",
+      "debug": {
+        "samples": [
+          "84",
+          "87.16",
+          "86.3",
+          "87",
+          "87.12"
+        ],
+        "all": [
+          "84",
+          "87.16",
+          "86.3",
+          "87",
+          "87.12"
+        ],
+        "normed": [
+          "84",
+          "87.16",
+          "86.3",
+          "87",
+          "87.12"
+        ],
+        "nums": [
+          84.0,
+          87.16,
+          86.3,
+          87.0,
+          87.12
+        ],
+        "strategy": "numeric_cluster"
+      },
+      "idx": 44
+    },
+    {
+      "question": "What is the difference between the percentage of children who received treatment for diarrhoea  in Jamaica in 1986 and that in 1987?\nEnsure brevity in your answer. ",
+      "table_clean": "",
+      "headers": [],
+      "answer": "0",
+      "ground_truth": "0.",
+      "correct": true,
+      "method": "cot_sc",
+      "debug": {
+        "samples": [
+          "9",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "all": [
+          "9",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "normed": [
+          "9",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "nums": [
+          9.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "strategy": "numeric_cluster"
+      },
+      "idx": 45
+    },
+    {
+      "question": "What is the difference between the percentage of children who received treatment for diarrhoea  in Jamaica in 1987 and the percentage of children who received treatment for diarrhoea  in Lower middle income in 1989?\nProvide a succinct answer.",
+      "table_clean": "",
+      "headers": [],
+      "answer": "-22.3635",
+      "ground_truth": "-22.31.",
+      "correct": false,
+      "method": "cot_sc",
+      "debug": {
+        "samples": [
+          "-22.3635",
+          "-22.36",
+          "22.43",
+          "-22.43697",
+          "-22.3649"
+        ],
+        "all": [
+          "-22.3635",
+          "-22.36",
+          "22.43",
+          "-22.43697",
+          "-22.3649"
+        ],
+        "normed": [
+          "-22.3635",
+          "-22.36",
+          "22.43",
+          "-22.43697",
+          "-22.3649"
+        ],
+        "nums": [
+          -22.3635,
+          -22.36,
+          22.43,
+          -22.43697,
+          -22.3649
+        ],
+        "strategy": "numeric_cluster"
+      },
+      "idx": 46
+    },
+    {
+      "question": "What is the average percentage of children who received treatment for diarrhoea  in Lower middle income per year?\nKeep it short and to the point.",
+      "table_clean": "",
+      "headers": [],
+      "answer": "28.63",
+      "ground_truth": "28.4.",
+      "correct": false,
+      "method": "cot_sc",
+      "debug": {
+        "samples": [
+          "30",
+          "28.63",
+          "28.67",
+          "28.6333",
+          "28.333333333333332"
+        ],
+        "all": [
+          "30",
+          "28.63",
+          "28.67",
+          "28.6333",
+          "28.333333333333332"
+        ],
+        "normed": [
+          "30",
+          "28.63",
+          "28.67",
+          "28.6333",
+          "28.333333333333332"
+        ],
+        "nums": [
+          30.0,
+          28.63,
+          28.67,
+          28.6333,
+          28.333333333333332
+        ],
+        "strategy": "numeric_cluster"
+      },
+      "idx": 47
+    },
+    {
+      "question": "In the year 1986, what is the difference between the percentage of children who received treatment for diarrhoea  in Lower middle income and percentage of children who received treatment for diarrhoea  in Morocco?\nOffer a very short reply.",
+      "table_clean": "",
+      "headers": [],
+      "answer": "10",
+      "ground_truth": "9.71.",
+      "correct": false,
+      "method": "cot_sc",
+      "debug": {
+        "samples": [
+          "10",
+          "9.7483",
+          "9.7732",
+          "10",
+          "9.7333"
+        ],
+        "all": [
+          "10",
+          "9.7483",
+          "9.7732",
+          "10",
+          "9.7333"
+        ],
+        "normed": [
+          "10",
+          "9.7483",
+          "9.7732",
+          "10",
+          "9.7333"
+        ],
+        "nums": [
+          10.0,
+          9.7483,
+          9.7732,
+          10.0,
+          9.7333
+        ],
+        "strategy": "numeric_cluster"
+      },
+      "idx": 48
+    },
+    {
+      "question": "What is the ratio of the percentage of children who received treatment for diarrhoea  in Lower middle income in 1987 to that in 1989?\nYour answer should be compact.",
+      "table_clean": "",
+      "headers": [],
+      "answer": "1.14",
+      "ground_truth": "1.14.",
+      "correct": true,
+      "method": "cot_sc",
+      "debug": {
+        "samples": [
+          "1.14",
+          "1.14",
+          "1.136",
+          "1.142",
+          "1.138"
+        ],
+        "all": [
+          "1.14",
+          "1.14",
+          "1.136",
+          "1.142",
+          "1.138"
+        ],
+        "normed": [
+          "1.14",
+          "1.14",
+          "1.136",
+          "1.142",
+          "1.138"
+        ],
+        "nums": [
+          1.14,
+          1.14,
+          1.136,
+          1.142,
+          1.138
+        ],
+        "strategy": "numeric_cluster"
+      },
+      "idx": 49
+    },
+    {
+      "question": "Is the percentage of children who received treatment for diarrhoea  in Lower middle income in 1987 less than that in 1989?\nMake the answer very short.",
+      "table_clean": "",
+      "headers": [],
+      "answer": "No",
+      "ground_truth": "No.",
+      "correct": false,
+      "method": "cot_sc",
+      "debug": {
+        "samples": [
+          "No",
+          "No",
+          "No",
+          "No",
+          "No"
+        ],
+        "strategy": "binary_mode",
+        "all": [
+          "No",
+          "No",
+          "No",
+          "No",
+          "No"
+        ]
+      },
+      "idx": 50
+    },
+    {
+      "question": "Is the difference between the percentage of children who received treatment for diarrhoea  in Lower middle income in 1986 and 1987 greater than the difference between the percentage of children who received treatment for diarrhoea  in Morocco in 1986 and 1987?\nProvide a succinct answer.",
+      "table_clean": "",
+      "headers": [],
+      "answer": "no",
+      "ground_truth": "Yes.",
+      "correct": false,
+      "method": "cot_sc",
+      "debug": {
+        "samples": [
+          "no",
+          "no",
+          "No",
+          "No",
+          "No"
+        ],
+        "strategy": "binary_mode",
+        "all": [
+          "no",
+          "no",
+          "No",
+          "No",
+          "No"
+        ]
+      },
+      "idx": 51
+    },
+    {
+      "question": "What is the difference between the highest and the second highest percentage of children who received treatment for diarrhoea  in Lower middle income?\nProvide a succinct answer.",
+      "table_clean": "",
+      "headers": [],
+      "answer": "3.978",
+      "ground_truth": "3.86.",
+      "correct": false,
+      "method": "cot_sc",
+      "debug": {
+        "samples": [
+          "4.023",
+          "3.978",
+          "3.98",
+          "3.78464567",
+          "3.86"
+        ],
+        "all": [
+          "4.023",
+          "3.978",
+          "3.98",
+          "3.78464567",
+          "3.86"
+        ],
+        "normed": [
+          "4.023",
+          "3.978",
+          "3.98",
+          "3.78464567",
+          "3.86"
+        ],
+        "nums": [
+          4.023,
+          3.978,
+          3.98,
+          3.78464567,
+          3.86
+        ],
+        "strategy": "numeric_cluster"
+      },
+      "idx": 52
+    },
+    {
+      "question": "What is the difference between the highest and the lowest percentage of children who received treatment for diarrhoea  in Lower middle income?\nMake the answer very short.",
+      "table_clean": "",
+      "headers": [],
+      "answer": "7.3",
+      "ground_truth": "7.46.",
+      "correct": false,
+      "method": "cot_sc",
+      "debug": {
+        "samples": [
+          "7.3137",
+          "7.3",
+          "7.5",
+          "7.3",
+          "7.4"
+        ],
+        "all": [
+          "7.3137",
+          "7.3",
+          "7.5",
+          "7.3",
+          "7.4"
+        ],
+        "normed": [
+          "7.3137",
+          "7.3",
+          "7.5",
+          "7.3",
+          "7.4"
+        ],
+        "nums": [
+          7.3137,
+          7.3,
+          7.5,
+          7.3,
+          7.4
+        ],
+        "strategy": "numeric_cluster"
+      },
+      "idx": 53
+    },
+    {
+      "question": "In how many years, is the percentage of children who received treatment for diarrhoea  in Lower middle income greater than the average percentage of children who received treatment for diarrhoea  in Lower middle income taken over all years?\nEnsure brevity in your answer. ",
+      "table_clean": "",
+      "headers": [],
+      "answer": "2",
+      "ground_truth": "1.",
+      "correct": false,
+      "method": "cot_sc",
+      "debug": {
+        "samples": [
+          "2",
+          "1",
+          "2",
+          "2",
+          "1"
+        ],
+        "all": [
+          "2",
+          "1",
+          "2",
+          "2",
+          "1"
+        ],
+        "normed": [
+          "2",
+          "1",
+          "2",
+          "2",
+          "1"
+        ],
+        "nums": [
+          2.0,
+          1.0,
+          2.0,
+          2.0,
+          1.0
+        ],
+        "strategy": "numeric_cluster"
+      },
+      "idx": 54
+    },
+    {
+      "question": "What does the 3rd bar from the top in 1989 represents?\nYour answer should be compact.",
+      "table_clean": "",
+      "headers": [],
+      "answer": "Lower middle income",
+      "ground_truth": "Lower middle income.",
+      "correct": false,
+      "method": "cot_sc",
+      "debug": {
+        "samples": [
+          "Lower middle income",
+          "Lower middle income",
+          "Lower middle income",
+          "Lower middle income",
+          "Lower middle income"
+        ],
+        "strategy": "string_mode",
+        "all": [
+          "Lower middle income",
+          "Lower middle income",
+          "Lower middle income",
+          "Lower middle income",
+          "Lower middle income"
+        ]
+      },
+      "idx": 55
+    },
+    {
+      "question": "What does the 1st bar from the bottom in 1986 represents?\nYour response must be concise.",
+      "table_clean": "",
+      "headers": [],
+      "answer": "Lower middle income",
+      "ground_truth": "Lower middle income.",
+      "correct": false,
+      "method": "cot_sc",
+      "debug": {
+        "samples": [
+          "Lower middle income",
+          "Lower middle income",
+          "Lower middle income",
+          "Lower middle income",
+          "Lower middle income"
+        ],
+        "strategy": "string_mode",
+        "all": [
+          "Lower middle income",
+          "Lower middle income",
+          "Lower middle income",
+          "Lower middle income",
+          "Lower middle income"
+        ]
+      },
+      "idx": 56
+    },
+    {
+      "question": "Is it the case that in every year, the sum of the percentage of children who received treatment for diarrhoea  in Lower middle income and percentage of children who received treatment for diarrhoea  in Jamaica is greater than the percentage of children who received treatment for diarrhoea  in Morocco?\nOffer a very short reply.",
+      "table_clean": "",
+      "headers": [],
+      "answer": "No",
+      "ground_truth": "No.",
+      "correct": false,
+      "method": "cot_sc",
+      "debug": {
+        "samples": [
+          "No",
+          "No",
+          "No",
+          "Yes",
+          "Yes"
+        ],
+        "strategy": "binary_mode",
+        "all": [
+          "No",
+          "No",
+          "No",
+          "Yes",
+          "Yes"
+        ]
+      },
+      "idx": 57
+    },
+    {
+      "question": "How many bars are there?\nOffer a very short reply.",
+      "table_clean": "",
+      "headers": [],
+      "answer": "9",
+      "ground_truth": "9.",
+      "correct": true,
+      "method": "cot_sc",
+      "debug": {
+        "samples": [
+          "6",
+          "6",
+          "9",
+          "9",
+          "9"
+        ],
+        "all": [
+          "6",
+          "6",
+          "9",
+          "9",
+          "9"
+        ],
+        "normed": [
+          "6",
+          "6",
+          "9",
+          "9",
+          "9"
+        ],
+        "nums": [
+          6.0,
+          6.0,
+          9.0,
+          9.0,
+          9.0
+        ],
+        "strategy": "numeric_cluster"
+      },
+      "idx": 58
+    },
+    {
+      "question": "What is the difference between two consecutive major ticks on the X-axis?\nYour answer should be compact.",
+      "table_clean": "",
+      "headers": [],
+      "answer": "10",
+      "ground_truth": "10.",
+      "correct": true,
+      "method": "cot_sc",
+      "debug": {
+        "samples": [
+          "10",
+          "10",
+          "10",
+          "10",
+          "10"
+        ],
+        "all": [
+          "10",
+          "10",
+          "10",
+          "10",
+          "10"
+        ],
+        "normed": [
+          "10",
+          "10",
+          "10",
+          "10",
+          "10"
+        ],
+        "nums": [
+          10.0,
+          10.0,
+          10.0,
+          10.0,
+          10.0
+        ],
+        "strategy": "numeric_cluster"
+      },
+      "idx": 59
+    },
+    {
+      "question": "Does the graph contain any zero values?\nOffer a terse response.",
+      "table_clean": "",
+      "headers": [],
+      "answer": "No",
+      "ground_truth": "No.",
+      "correct": false,
+      "method": "cot_sc",
+      "debug": {
+        "samples": [
+          "No, the chart does not contain any zero values.",
+          "No",
+          "No",
+          "No, the graph does not contain any zero values.",
+          "no"
+        ],
+        "strategy": "string_mode",
+        "all": [
+          "No, the chart does not contain any zero values.",
+          "No",
+          "No",
+          "No, the graph does not contain any zero values.",
+          "no"
+        ]
+      },
+      "idx": 60
+    },
+    {
+      "question": "Does the graph contain grids?\nGive a very brief answer.",
+      "table_clean": "",
+      "headers": [],
+      "answer": "yes",
+      "ground_truth": "Yes.",
+      "correct": false,
+      "method": "cot_sc",
+      "debug": {
+        "samples": [
+          "yes",
+          "Yes",
+          "Yes",
+          "Yes",
+          "Yes"
+        ],
+        "strategy": "binary_mode",
+        "all": [
+          "yes",
+          "Yes",
+          "Yes",
+          "Yes",
+          "Yes"
+        ]
+      },
+      "idx": 61
+    },
+    {
+      "question": "What is the title of the graph?\nKeep it short and to the point.",
+      "table_clean": "",
+      "headers": [],
+      "answer": "Percentage of children under 5 who received treatment for diarrhoea",
+      "ground_truth": "Percentage of children under 5 who received treatment for diarrhoea.",
+      "correct": true,
+      "method": "cot_sc",
+      "debug": {
+        "samples": [
+          "Percentage of children under 5 who received treatment for diarrhoea",
+          "Percentage of children under 5 who received treatment for diarrhoea",
+          "Percentage of children under 5 who received treatment for diarrhoea",
+          "Percentage of children under 5 who received treatment for diarrhoea",
+          "Percentage of children under 5 who received treatment for diarrhoea"
+        ],
+        "all": [
+          "Percentage of children under 5 who received treatment for diarrhoea",
+          "Percentage of children under 5 who received treatment for diarrhoea",
+          "Percentage of children under 5 who received treatment for diarrhoea",
+          "Percentage of children under 5 who received treatment for diarrhoea",
+          "Percentage of children under 5 who received treatment for diarrhoea"
+        ],
+        "normed": [
+          "percentage of children under 5 who received treatment for diarrhoea",
+          "percentage of children under 5 who received treatment for diarrhoea",
+          "percentage of children under 5 who received treatment for diarrhoea",
+          "percentage of children under 5 who received treatment for diarrhoea",
+          "percentage of children under 5 who received treatment for diarrhoea"
+        ],
+        "nums": [
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0
+        ],
+        "strategy": "numeric_cluster"
+      },
+      "idx": 62
+    },
+    {
+      "question": "What is the label or title of the X-axis?\nProvide a succinct answer.",
+      "table_clean": "",
+      "headers": [],
+      "answer": "The x-axis label is \"% of children under 5 who received treatment\".",
+      "ground_truth": "% of children under 5 who received treatment.",
+      "correct": true,
+      "method": "cot_sc",
+      "debug": {
+        "samples": [
+          "The x-axis label is \"% of children under 5 who received treatment\".",
+          "The x-axis label is \"% of children under 5 who received treatment\".",
+          "The x-axis represents the percentage of children under 5 who received treatment for diarrhoea.",
+          "% of children under 5 who received treatment",
+          "The x-axis label represents the percentage of children under 5 who received treatment for diarrhoea."
+        ],
+        "all": [
+          "The x-axis label is \"% of children under 5 who received treatment\".",
+          "The x-axis label is \"% of children under 5 who received treatment\".",
+          "The x-axis represents the percentage of children under 5 who received treatment for diarrhoea.",
+          "% of children under 5 who received treatment",
+          "The x-axis label represents the percentage of children under 5 who received treatment for diarrhoea."
+        ],
+        "normed": [
+          "the x-axis label is \" of children under 5 who received treatment\".",
+          "the x-axis label is \" of children under 5 who received treatment\".",
+          "the x-axis represents the percentage of children under 5 who received treatment for diarrhoea.",
+          " of children under 5 who received treatment",
+          "the x-axis label represents the percentage of children under 5 who received treatment for diarrhoea."
+        ],
+        "nums": [
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0
+        ],
+        "strategy": "numeric_cluster"
+      },
+      "idx": 63
+    },
+    {
+      "question": "What is the % of children under 5 who received treatment of Lower middle income in 1986?\nYour answer should be very brief.",
+      "table_clean": "",
+      "headers": [],
+      "answer": "25",
+      "ground_truth": "24.71.",
+      "correct": false,
+      "method": "cot_sc",
+      "debug": {
+        "samples": [
+          "25",
+          "25",
+          "25",
+          "24.7",
+          "25"
+        ],
+        "all": [
+          "25",
+          "25",
+          "25",
+          "24.7",
+          "25"
+        ],
+        "normed": [
+          "25",
+          "25",
+          "25",
+          "24.7",
+          "25"
+        ],
+        "nums": [
+          25.0,
+          25.0,
+          25.0,
+          24.7,
+          25.0
+        ],
+        "strategy": "numeric_cluster"
+      },
+      "idx": 64
+    },
+    {
+      "question": "What is the % of children under 5 who received treatment in Jamaica in 1986?\nGive a very brief answer.",
+      "table_clean": "",
+      "headers": [],
+      "answer": "6",
+      "ground_truth": "6.",
+      "correct": true,
+      "method": "cot_sc",
+      "debug": {
+        "samples": [
+          "6",
+          "6",
+          "6",
+          "6",
+          "6"
+        ],
+        "all": [
+          "6",
+          "6",
+          "6",
+          "6",
+          "6"
+        ],
+        "normed": [
+          "6",
+          "6",
+          "6",
+          "6",
+          "6"
+        ],
+        "nums": [
+          6.0,
+          6.0,
+          6.0,
+          6.0,
+          6.0
+        ],
+        "strategy": "numeric_cluster"
+      },
+      "idx": 65
+    },
+    {
+      "question": "What is the % of children under 5 who received treatment of Lower middle income in 1987?\nYour response must be concise.",
+      "table_clean": "",
+      "headers": [],
+      "answer": "32",
+      "ground_truth": "32.17.",
+      "correct": false,
+      "method": "cot_sc",
+      "debug": {
+        "samples": [
+          "32",
+          "32",
+          "32",
+          "32",
+          "32"
+        ],
+        "all": [
+          "32",
+          "32",
+          "32",
+          "32",
+          "32"
+        ],
+        "normed": [
+          "32",
+          "32",
+          "32",
+          "32",
+          "32"
+        ],
+        "nums": [
+          32.0,
+          32.0,
+          32.0,
+          32.0,
+          32.0
+        ],
+        "strategy": "numeric_cluster"
+      },
+      "idx": 66
+    },
+    {
+      "question": "What is the % of children under 5 who received treatment in Jamaica in 1987?\nYour response must be concise.",
+      "table_clean": "",
+      "headers": [],
+      "answer": "6",
+      "ground_truth": "6.",
+      "correct": true,
+      "method": "cot_sc",
+      "debug": {
+        "samples": [
+          "6",
+          "6",
+          "6",
+          "6",
+          "6"
+        ],
+        "all": [
+          "6",
+          "6",
+          "6",
+          "6",
+          "6"
+        ],
+        "normed": [
+          "6",
+          "6",
+          "6",
+          "6",
+          "6"
+        ],
+        "nums": [
+          6.0,
+          6.0,
+          6.0,
+          6.0,
+          6.0
+        ],
+        "strategy": "numeric_cluster"
+      },
+      "idx": 67
+    },
+    {
+      "question": "What is the % of children under 5 who received treatment in Lower middle income in 1989?\nMake the answer very short.",
+      "table_clean": "",
+      "headers": [],
+      "answer": "28",
+      "ground_truth": "28.31.",
+      "correct": false,
+      "method": "cot_sc",
+      "debug": {
+        "samples": [
+          "28",
+          "28",
+          "28.4",
+          "28",
+          "28"
+        ],
+        "all": [
+          "28",
+          "28",
+          "28.4",
+          "28",
+          "28"
+        ],
+        "normed": [
+          "28",
+          "28",
+          "28.4",
+          "28",
+          "28"
+        ],
+        "nums": [
+          28.0,
+          28.0,
+          28.4,
+          28.0,
+          28.0
+        ],
+        "strategy": "numeric_cluster"
+      },
+      "idx": 68
+    },
+    {
+      "question": "What is the % of children under 5 who received treatment of Morocco in 1989?\nYour answer should be compact.",
+      "table_clean": "",
+      "headers": [],
+      "answer": "14",
+      "ground_truth": "14.",
+      "correct": true,
+      "method": "cot_sc",
+      "debug": {
+        "samples": [
+          "14",
+          "14",
+          "14",
+          "14",
+          "14"
+        ],
+        "all": [
+          "14",
+          "14",
+          "14",
+          "14",
+          "14"
+        ],
+        "normed": [
+          "14",
+          "14",
+          "14",
+          "14",
+          "14"
+        ],
+        "nums": [
+          14.0,
+          14.0,
+          14.0,
+          14.0,
+          14.0
+        ],
+        "strategy": "numeric_cluster"
+      },
+      "idx": 69
+    },
+    {
+      "question": "Across all years, what is the maximum % of children under 5 who received treatment of Lower middle income?\nYour answer should be very brief.",
+      "table_clean": "",
+      "headers": [],
+      "answer": "32",
+      "ground_truth": "32.17.",
+      "correct": false,
+      "method": "cot_sc",
+      "debug": {
+        "samples": [
+          "32",
+          "32",
+          "32.15",
+          "32",
+          "32"
+        ],
+        "all": [
+          "32",
+          "32",
+          "32.15",
+          "32",
+          "32"
+        ],
+        "normed": [
+          "32",
+          "32",
+          "32.15",
+          "32",
+          "32"
+        ],
+        "nums": [
+          32.0,
+          32.0,
+          32.15,
+          32.0,
+          32.0
+        ],
+        "strategy": "numeric_cluster"
+      },
+      "idx": 70
+    },
+    {
+      "question": "Across all years, what is the maximum % of children under 5 who received treatment in Jamaica?\nYour answer should be compact.",
+      "table_clean": "",
+      "headers": [],
+      "answer": "15",
+      "ground_truth": "15.",
+      "correct": true,
+      "method": "cot_sc",
+      "debug": {
+        "samples": [
+          "15",
+          "15",
+          "15",
+          "15",
+          "15"
+        ],
+        "all": [
+          "15",
+          "15",
+          "15",
+          "15",
+          "15"
+        ],
+        "normed": [
+          "15",
+          "15",
+          "15",
+          "15",
+          "15"
+        ],
+        "nums": [
+          15.0,
+          15.0,
+          15.0,
+          15.0,
+          15.0
+        ],
+        "strategy": "numeric_cluster"
+      },
+      "idx": 71
+    },
+    {
+      "question": "Across all years, what is the minimum % of children under 5 who received treatment of Lower middle income?\nGive a very brief answer.",
+      "table_clean": "",
+      "headers": [],
+      "answer": "24.7",
+      "ground_truth": "24.71.",
+      "correct": false,
+      "method": "cot_sc",
+      "debug": {
+        "samples": [
+          "24.7",
+          "24.7",
+          "24.7",
+          "24.7",
+          "24.7"
+        ],
+        "all": [
+          "24.7",
+          "24.7",
+          "24.7",
+          "24.7",
+          "24.7"
+        ],
+        "normed": [
+          "24.7",
+          "24.7",
+          "24.7",
+          "24.7",
+          "24.7"
+        ],
+        "nums": [
+          24.7,
+          24.7,
+          24.7,
+          24.7,
+          24.7
+        ],
+        "strategy": "numeric_cluster"
+      },
+      "idx": 72
+    },
+    {
+      "question": "What is the total % of children under 5 who received treatment of Lower middle income in the graph?\nOffer a terse response.",
+      "table_clean": "",
+      "headers": [],
+      "answer": "87.43556",
+      "ground_truth": "85.19.",
+      "correct": false,
+      "method": "cot_sc",
+      "debug": {
+        "samples": [
+          "87.43556",
+          "87.3",
+          "86.2375",
+          "87.4",
+          "86.3878"
+        ],
+        "all": [
+          "87.43556",
+          "87.3",
+          "86.2375",
+          "87.4",
+          "86.3878"
+        ],
+        "normed": [
+          "87.43556",
+          "87.3",
+          "86.2375",
+          "87.4",
+          "86.3878"
+        ],
+        "nums": [
+          87.43556,
+          87.3,
+          86.2375,
+          87.4,
+          86.3878
+        ],
+        "strategy": "numeric_cluster"
+      },
+      "idx": 73
+    },
+    {
+      "question": "What is the total % of children under 5 who received treatment of Jamaica in the graph?\nYour response must be concise.",
+      "table_clean": "",
+      "headers": [],
+      "answer": "26",
+      "ground_truth": "27.",
+      "correct": false,
+      "method": "cot_sc",
+      "debug": {
+        "samples": [
+          "26",
+          "27",
+          "26",
+          "26",
+          "26"
+        ],
+        "all": [
+          "26",
+          "27",
+          "26",
+          "26",
+          "26"
+        ],
+        "normed": [
+          "26",
+          "27",
+          "26",
+          "26",
+          "26"
+        ],
+        "nums": [
+          26.0,
+          27.0,
+          26.0,
+          26.0,
+          26.0
+        ],
+        "strategy": "numeric_cluster"
+      },
+      "idx": 74
+    },
+    {
+      "question": "What is the total % of children under 5 who received treatment in Morocco in the graph?\nYour answer should be compact.",
+      "table_clean": "",
+      "headers": [],
+      "answer": "73",
+      "ground_truth": "73.",
+      "correct": true,
+      "method": "cot_sc",
+      "debug": {
+        "samples": [
+          "73",
+          "73",
+          "73",
+          "73",
+          "73"
+        ],
+        "all": [
+          "73",
+          "73",
+          "73",
+          "73",
+          "73"
+        ],
+        "normed": [
+          "73",
+          "73",
+          "73",
+          "73",
+          "73"
+        ],
+        "nums": [
+          73.0,
+          73.0,
+          73.0,
+          73.0,
+          73.0
+        ],
+        "strategy": "numeric_cluster"
+      },
+      "idx": 75
+    },
+    {
+      "question": "What is the difference between the % of children under 5 who received treatment of Lower middle income in 1986 and that in 1987?\nYour answer should be very brief.",
+      "table_clean": "",
+      "headers": [],
+      "answer": "7.3702",
+      "ground_truth": "-7.46.",
+      "correct": false,
+      "method": "cot_sc",
+      "debug": {
+        "samples": [
+          "7.3702",
+          "7.4345",
+          "-7.456",
+          "-7.5",
+          "-7.5392"
+        ],
+        "all": [
+          "7.3702",
+          "7.4345",
+          "-7.456",
+          "-7.5",
+          "-7.5392"
+        ],
+        "normed": [
+          "7.3702",
+          "7.4345",
+          "-7.456",
+          "-7.5",
+          "-7.5392"
+        ],
+        "nums": [
+          7.3702,
+          7.4345,
+          -7.456,
+          -7.5,
+          -7.5392
+        ],
+        "strategy": "numeric_cluster"
+      },
+      "idx": 76
+    },
+    {
+      "question": "What is the difference between the % of children under 5 who received treatment in Lower middle income in 1986 and that in 1989?\nYour response must be concise.",
+      "table_clean": "",
+      "headers": [],
+      "answer": "3%",
+      "ground_truth": "-3.6.",
+      "correct": false,
+      "method": "cot_sc",
+      "debug": {
+        "samples": [
+          "-3.6",
+          "Subtract the percentage for 1986 (25) from 1989 (28).",
+          "3%",
+          "3",
+          "3.6%"
+        ],
+        "all": [
+          "-3.6",
+          "Subtract the percentage for 1986 (25) from 1989 (28).",
+          "3%",
+          "3",
+          "3.6%"
+        ],
+        "normed": [
+          "-3.6",
+          "subtract the percentage for 1986 (25) from 1989 (28).",
+          "3",
+          "3",
+          "3.6"
+        ],
+        "nums": [
+          -3.6,
+          1986.0,
+          3.0,
+          3.0,
+          3.6
+        ],
+        "strategy": "numeric_cluster"
+      },
+      "idx": 77
+    },
+    {
+      "question": "What is the difference between the % of children under 5 who received treatment in Morocco in 1986 and that in 1989?\nYour response must be concise.",
+      "table_clean": "",
+      "headers": [],
+      "answer": "1",
+      "ground_truth": "1.",
+      "correct": true,
+      "method": "cot_sc",
+      "debug": {
+        "samples": [
+          "1",
+          "1",
+          "1",
+          "1",
+          "1"
+        ],
+        "all": [
+          "1",
+          "1",
+          "1",
+          "1",
+          "1"
+        ],
+        "normed": [
+          "1",
+          "1",
+          "1",
+          "1",
+          "1"
+        ],
+        "nums": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "strategy": "numeric_cluster"
+      },
+      "idx": 78
+    },
+    {
+      "question": "What is the difference between the % of children under 5 who received treatment of Lower middle income in 1987 and that in 1989?\nEnsure brevity in your answer. ",
+      "table_clean": "",
+      "headers": [],
+      "answer": "3.866",
+      "ground_truth": "3.86.",
+      "correct": true,
+      "method": "cot_sc",
+      "debug": {
+        "samples": [
+          "3.866",
+          "3.857",
+          "3.7783",
+          "3.7642",
+          "3.9095"
+        ],
+        "all": [
+          "3.866",
+          "3.857",
+          "3.7783",
+          "3.7642",
+          "3.9095"
+        ],
+        "normed": [
+          "3.866",
+          "3.857",
+          "3.7783",
+          "3.7642",
+          "3.9095"
+        ],
+        "nums": [
+          3.866,
+          3.857,
+          3.7783,
+          3.7642,
+          3.9095
+        ],
+        "strategy": "numeric_cluster"
+      },
+      "idx": 79
+    },
+    {
+      "question": "What is the difference between the % of children under 5 who received treatment of Morocco in 1987 and that in 1989?\nProvide a short and direct response.",
+      "table_clean": "",
+      "headers": [],
+      "answer": "30",
+      "ground_truth": "30.",
+      "correct": true,
+      "method": "cot_sc",
+      "debug": {
+        "samples": [
+          "30",
+          "30",
+          "30",
+          "30",
+          "30"
+        ],
+        "all": [
+          "30",
+          "30",
+          "30",
+          "30",
+          "30"
+        ],
+        "normed": [
+          "30",
+          "30",
+          "30",
+          "30",
+          "30"
+        ],
+        "nums": [
+          30.0,
+          30.0,
+          30.0,
+          30.0,
+          30.0
+        ],
+        "strategy": "numeric_cluster"
+      },
+      "idx": 80
+    },
+    {
+      "question": "What is the difference between the % of children under 5 who received treatment of Lower middle income in 1986 and the % of children under 5 who received treatment of Jamaica in 1987?\nKeep it short and to the point.",
+      "table_clean": "",
+      "headers": [],
+      "answer": "18.8",
+      "ground_truth": "18.71.",
+      "correct": false,
+      "method": "cot_sc",
+      "debug": {
+        "samples": [
+          "18.8135",
+          "18.8",
+          "18.8431",
+          "18.8319",
+          "18.8"
+        ],
+        "all": [
+          "18.8135",
+          "18.8",
+          "18.8431",
+          "18.8319",
+          "18.8"
+        ],
+        "normed": [
+          "18.8135",
+          "18.8",
+          "18.8431",
+          "18.8319",
+          "18.8"
+        ],
+        "nums": [
+          18.8135,
+          18.8,
+          18.8431,
+          18.8319,
+          18.8
+        ],
+        "strategy": "numeric_cluster"
+      },
+      "idx": 81
+    },
+    {
+      "question": "What is the difference between the % of children under 5 who received treatment in Lower middle income in 1986 and the % of children under 5 who received treatment in Morocco in 1987?\nOffer a very short reply.",
+      "table_clean": "",
+      "headers": [],
+      "answer": "-19.3614",
+      "ground_truth": "-19.29.",
+      "correct": false,
+      "method": "cot_sc",
+      "debug": {
+        "samples": [
+          "-19.3614",
+          "-19",
+          "-19.2",
+          "19",
+          "-19.5357"
+        ],
+        "all": [
+          "-19.3614",
+          "-19",
+          "-19.2",
+          "19",
+          "-19.5357"
+        ],
+        "normed": [
+          "-19.3614",
+          "-19",
+          "-19.2",
+          "19",
+          "-19.5357"
+        ],
+        "nums": [
+          -19.3614,
+          -19.0,
+          -19.2,
+          19.0,
+          -19.5357
+        ],
+        "strategy": "numeric_cluster"
+      },
+      "idx": 82
+    },
+    {
+      "question": "What is the difference between the % of children under 5 who received treatment in Jamaica in 1986 and the % of children under 5 who received treatment in Morocco in 1987?\nKeep it short and to the point.",
+      "table_clean": "",
+      "headers": [],
+      "answer": "-38",
+      "ground_truth": "-38.",
+      "correct": true,
+      "method": "cot_sc",
+      "debug": {
+        "samples": [
+          "38",
+          "-38",
+          "-38",
+          "-38",
+          "38"
+        ],
+        "all": [
+          "38",
+          "-38",
+          "-38",
+          "-38",
+          "38"
+        ],
+        "normed": [
+          "38",
+          "-38",
+          "-38",
+          "-38",
+          "38"
+        ],
+        "nums": [
+          38.0,
+          -38.0,
+          -38.0,
+          -38.0,
+          38.0
+        ],
+        "strategy": "numeric_cluster"
+      },
+      "idx": 83
+    },
+    {
+      "question": "What is the difference between the % of children under 5 who received treatment in Lower middle income in 1986 and the % of children under 5 who received treatment in Jamaica in 1989?\nMake the answer very short.",
+      "table_clean": "",
+      "headers": [],
+      "answer": "9.87",
+      "ground_truth": "9.71.",
+      "correct": false,
+      "method": "cot_sc",
+      "debug": {
+        "samples": [
+          "9.87",
+          "9.9375",
+          "9.8716",
+          "9.7433",
+          "9.7821"
+        ],
+        "all": [
+          "9.87",
+          "9.9375",
+          "9.8716",
+          "9.7433",
+          "9.7821"
+        ],
+        "normed": [
+          "9.87",
+          "9.9375",
+          "9.8716",
+          "9.7433",
+          "9.7821"
+        ],
+        "nums": [
+          9.87,
+          9.9375,
+          9.8716,
+          9.7433,
+          9.7821
+        ],
+        "strategy": "numeric_cluster"
+      },
+      "idx": 84
+    },
+    {
+      "question": "What is the difference between the % of children under 5 who received treatment of Lower middle income in 1986 and the % of children under 5 who received treatment of Morocco in 1989?\nProvide a succinct answer.",
+      "table_clean": "",
+      "headers": [],
+      "answer": "10.7308",
+      "ground_truth": "10.71.",
+      "correct": false,
+      "method": "cot_sc",
+      "debug": {
+        "samples": [
+          "10.7308",
+          "10.75",
+          "10.872",
+          "10.7384",
+          "10.5"
+        ],
+        "all": [
+          "10.7308",
+          "10.75",
+          "10.872",
+          "10.7384",
+          "10.5"
+        ],
+        "normed": [
+          "10.7308",
+          "10.75",
+          "10.872",
+          "10.7384",
+          "10.5"
+        ],
+        "nums": [
+          10.7308,
+          10.75,
+          10.872,
+          10.7384,
+          10.5
+        ],
+        "strategy": "numeric_cluster"
+      },
+      "idx": 85
+    },
+    {
+      "question": "What is the difference between the % of children under 5 who received treatment in Jamaica in 1986 and the % of children under 5 who received treatment in Morocco in 1989?\nOffer a very short reply.",
+      "table_clean": "",
+      "headers": [],
+      "answer": "-8",
+      "ground_truth": "-8.",
+      "correct": true,
+      "method": "cot_sc",
+      "debug": {
+        "samples": [
+          "-8",
+          "-8",
+          "1",
+          "-8",
+          "8"
+        ],
+        "all": [
+          "-8",
+          "-8",
+          "1",
+          "-8",
+          "8"
+        ],
+        "normed": [
+          "-8",
+          "-8",
+          "1",
+          "-8",
+          "8"
+        ],
+        "nums": [
+          -8.0,
+          -8.0,
+          1.0,
+          -8.0,
+          8.0
+        ],
+        "strategy": "numeric_cluster"
+      },
+      "idx": 86
+    },
+    {
+      "question": "What is the difference between the % of children under 5 who received treatment of Lower middle income in 1987 and the % of children under 5 who received treatment of Jamaica in 1989?\nGive a very brief answer.",
+      "table_clean": "",
+      "headers": [],
+      "answer": "17",
+      "ground_truth": "17.17.",
+      "correct": false,
+      "method": "cot_sc",
+      "debug": {
+        "samples": [
+          "17",
+          "17",
+          "17",
+          "17.278",
+          "Subtract the value of Jamaica (15) from the value of Lower middle income (32) for the year 1987."
+        ],
+        "all": [
+          "17",
+          "17",
+          "17",
+          "17.278",
+          "Subtract the value of Jamaica (15) from the value of Lower middle income (32) for the year 1987."
+        ],
+        "normed": [
+          "17",
+          "17",
+          "17",
+          "17.278",
+          "subtract the value of jamaica (15) from the value of lower middle income (32) for the year 1987."
+        ],
+        "nums": [
+          17.0,
+          17.0,
+          17.0,
+          17.278,
+          15.0
+        ],
+        "strategy": "numeric_cluster"
+      },
+      "idx": 87
+    },
+    {
+      "question": "What is the difference between the % of children under 5 who received treatment of Lower middle income in 1987 and the % of children under 5 who received treatment of Morocco in 1989?\nOffer a very short reply.",
+      "table_clean": "",
+      "headers": [],
+      "answer": "18",
+      "ground_truth": "18.17.",
+      "correct": false,
+      "method": "cot_sc",
+      "debug": {
+        "samples": [
+          "18",
+          "18",
+          "18.0",
+          "18",
+          "18"
+        ],
+        "all": [
+          "18",
+          "18",
+          "18.0",
+          "18",
+          "18"
+        ],
+        "normed": [
+          "18",
+          "18",
+          "18.0",
+          "18",
+          "18"
+        ],
+        "nums": [
+          18.0,
+          18.0,
+          18.0,
+          18.0,
+          18.0
+        ],
+        "strategy": "numeric_cluster"
+      },
+      "idx": 88
+    },
+    {
+      "question": "What is the average % of children under 5 who received treatment in Lower middle income per year?\nYour answer should be very brief.",
+      "table_clean": "",
+      "headers": [],
+      "answer": "28.6667",
+      "ground_truth": "28.4.",
+      "correct": false,
+      "method": "cot_sc",
+      "debug": {
+        "samples": [
+          "28.6667",
+          "28.6",
+          "28.63",
+          "28.67",
+          "28.333"
+        ],
+        "all": [
+          "28.6667",
+          "28.6",
+          "28.63",
+          "28.67",
+          "28.333"
+        ],
+        "normed": [
+          "28.6667",
+          "28.6",
+          "28.63",
+          "28.67",
+          "28.333"
+        ],
+        "nums": [
+          28.6667,
+          28.6,
+          28.63,
+          28.67,
+          28.333
+        ],
+        "strategy": "numeric_cluster"
+      },
+      "idx": 89
+    },
+    {
+      "question": "What is the average % of children under 5 who received treatment of Morocco per year?\nYour answer should be very brief.",
+      "table_clean": "",
+      "headers": [],
+      "answer": "26",
+      "ground_truth": "24.33.",
+      "correct": false,
+      "method": "cot_sc",
+      "debug": {
+        "samples": [
+          "73",
+          "26",
+          "26.0",
+          "26",
+          "73 /"
+        ],
+        "all": [
+          "73",
+          "26",
+          "26.0",
+          "26",
+          "73 /"
+        ],
+        "normed": [
+          "73",
+          "26",
+          "26.0",
+          "26",
+          "73 /"
+        ],
+        "nums": [
+          73.0,
+          26.0,
+          26.0,
+          26.0,
+          73.0
+        ],
+        "strategy": "numeric_cluster"
+      },
+      "idx": 90
+    },
+    {
+      "question": "In the year 1986, what is the difference between the % of children under 5 who received treatment of Lower middle income and % of children under 5 who received treatment of Jamaica?\nYour answer should be very brief.",
+      "table_clean": "",
+      "headers": [],
+      "answer": "18.7345",
+      "ground_truth": "18.71.",
+      "correct": false,
+      "method": "cot_sc",
+      "debug": {
+        "samples": [
+          "18.88708",
+          "18.83794",
+          "18.7345",
+          "18.735",
+          "18.8103"
+        ],
+        "all": [
+          "18.88708",
+          "18.83794",
+          "18.7345",
+          "18.735",
+          "18.8103"
+        ],
+        "normed": [
+          "18.88708",
+          "18.83794",
+          "18.7345",
+          "18.735",
+          "18.8103"
+        ],
+        "nums": [
+          18.88708,
+          18.83794,
+          18.7345,
+          18.735,
+          18.8103
+        ],
+        "strategy": "numeric_cluster"
+      },
+      "idx": 91
+    },
+    {
+      "question": "In the year 1986, what is the difference between the % of children under 5 who received treatment of Lower middle income and % of children under 5 who received treatment of Morocco?\nEnsure brevity in your answer. ",
+      "table_clean": "",
+      "headers": [],
+      "answer": "9.73",
+      "ground_truth": "9.71.",
+      "correct": false,
+      "method": "cot_sc",
+      "debug": {
+        "samples": [
+          "9.73",
+          "9.875",
+          "9.873",
+          "9.7837",
+          "9.76"
+        ],
+        "all": [
+          "9.73",
+          "9.875",
+          "9.873",
+          "9.7837",
+          "9.76"
+        ],
+        "normed": [
+          "9.73",
+          "9.875",
+          "9.873",
+          "9.7837",
+          "9.76"
+        ],
+        "nums": [
+          9.73,
+          9.875,
+          9.873,
+          9.7837,
+          9.76
+        ],
+        "strategy": "numeric_cluster"
+      },
+      "idx": 92
+    },
+    {
+      "question": "In the year 1986, what is the difference between the % of children under 5 who received treatment in Jamaica and % of children under 5 who received treatment in Morocco?\nYour answer should be very brief.",
+      "table_clean": "",
+      "headers": [],
+      "answer": "-9",
+      "ground_truth": "-9.",
+      "correct": true,
+      "method": "cot_sc",
+      "debug": {
+        "samples": [
+          "-9",
+          "-9",
+          "-9",
+          "-9",
+          "-9"
+        ],
+        "all": [
+          "-9",
+          "-9",
+          "-9",
+          "-9",
+          "-9"
+        ],
+        "normed": [
+          "-9",
+          "-9",
+          "-9",
+          "-9",
+          "-9"
+        ],
+        "nums": [
+          -9.0,
+          -9.0,
+          -9.0,
+          -9.0,
+          -9.0
+        ],
+        "strategy": "numeric_cluster"
+      },
+      "idx": 93
+    },
+    {
+      "question": "In the year 1987, what is the difference between the % of children under 5 who received treatment in Lower middle income and % of children under 5 who received treatment in Jamaica?\nEnsure brevity in your answer. ",
+      "table_clean": "",
+      "headers": [],
+      "answer": "26",
+      "ground_truth": "26.17.",
+      "correct": false,
+      "method": "cot_sc",
+      "debug": {
+        "samples": [
+          "26",
+          "26",
+          "26.2399",
+          "26",
+          "26"
+        ],
+        "all": [
+          "26",
+          "26",
+          "26.2399",
+          "26",
+          "26"
+        ],
+        "normed": [
+          "26",
+          "26",
+          "26.2399",
+          "26",
+          "26"
+        ],
+        "nums": [
+          26.0,
+          26.0,
+          26.2399,
+          26.0,
+          26.0
+        ],
+        "strategy": "numeric_cluster"
+      },
+      "idx": 94
+    },
+    {
+      "question": "In the year 1987, what is the difference between the % of children under 5 who received treatment in Lower middle income and % of children under 5 who received treatment in Morocco?\nProvide a short and direct response.",
+      "table_clean": "",
+      "headers": [],
+      "answer": "-12",
+      "ground_truth": "-11.83.",
+      "correct": false,
+      "method": "cot_sc",
+      "debug": {
+        "samples": [
+          "-12",
+          "-12.0231",
+          "-12.063",
+          "-12.0361",
+          "-12.0293"
+        ],
+        "all": [
+          "-12",
+          "-12.0231",
+          "-12.063",
+          "-12.0361",
+          "-12.0293"
+        ],
+        "normed": [
+          "-12",
+          "-12.0231",
+          "-12.063",
+          "-12.0361",
+          "-12.0293"
+        ],
+        "nums": [
+          -12.0,
+          -12.0231,
+          -12.063,
+          -12.0361,
+          -12.0293
+        ],
+        "strategy": "numeric_cluster"
+      },
+      "idx": 95
+    },
+    {
+      "question": "In the year 1987, what is the difference between the % of children under 5 who received treatment of Jamaica and % of children under 5 who received treatment of Morocco?\nProvide a short and direct response.",
+      "table_clean": "",
+      "headers": [],
+      "answer": "-38",
+      "ground_truth": "-38.",
+      "correct": true,
+      "method": "cot_sc",
+      "debug": {
+        "samples": [
+          "38",
+          "38",
+          "-38",
+          "-38",
+          "-38"
+        ],
+        "all": [
+          "38",
+          "38",
+          "-38",
+          "-38",
+          "-38"
+        ],
+        "normed": [
+          "38",
+          "38",
+          "-38",
+          "-38",
+          "-38"
+        ],
+        "nums": [
+          38.0,
+          38.0,
+          -38.0,
+          -38.0,
+          -38.0
+        ],
+        "strategy": "numeric_cluster"
+      },
+      "idx": 96
+    },
+    {
+      "question": "In the year 1989, what is the difference between the % of children under 5 who received treatment of Lower middle income and % of children under 5 who received treatment of Jamaica?\nOffer a terse response.",
+      "table_clean": "",
+      "headers": [],
+      "answer": "13.4167",
+      "ground_truth": "13.31.",
+      "correct": false,
+      "method": "cot_sc",
+      "debug": {
+        "samples": [
+          "13.4167",
+          "13.4496",
+          "13.4067",
+          "13.3765",
+          "13.44376"
+        ],
+        "all": [
+          "13.4167",
+          "13.4496",
+          "13.4067",
+          "13.3765",
+          "13.44376"
+        ],
+        "normed": [
+          "13.4167",
+          "13.4496",
+          "13.4067",
+          "13.3765",
+          "13.44376"
+        ],
+        "nums": [
+          13.4167,
+          13.4496,
+          13.4067,
+          13.3765,
+          13.44376
+        ],
+        "strategy": "numeric_cluster"
+      },
+      "idx": 97
+    },
+    {
+      "question": "In the year 1989, what is the difference between the % of children under 5 who received treatment of Lower middle income and % of children under 5 who received treatment of Morocco?\nYour response must be concise.",
+      "table_clean": "",
+      "headers": [],
+      "answer": "14.3661",
+      "ground_truth": "14.31.",
+      "correct": false,
+      "method": "cot_sc",
+      "debug": {
+        "samples": [
+          "14.3661",
+          "14.3974",
+          "14.3165",
+          "14.36",
+          "14"
+        ],
+        "all": [
+          "14.3661",
+          "14.3974",
+          "14.3165",
+          "14.36",
+          "14"
+        ],
+        "normed": [
+          "14.3661",
+          "14.3974",
+          "14.3165",
+          "14.36",
+          "14"
+        ],
+        "nums": [
+          14.3661,
+          14.3974,
+          14.3165,
+          14.36,
+          14.0
+        ],
+        "strategy": "numeric_cluster"
+      },
+      "idx": 98
+    },
+    {
+      "question": "In the year 1989, what is the difference between the % of children under 5 who received treatment in Jamaica and % of children under 5 who received treatment in Morocco?\nOffer a very short reply.",
+      "table_clean": "",
+      "headers": [],
+      "answer": "1",
+      "ground_truth": "1.",
+      "correct": true,
+      "method": "cot_sc",
+      "debug": {
+        "samples": [
+          "10",
+          "1",
+          "1",
+          "1",
+          "1"
+        ],
+        "all": [
+          "10",
+          "1",
+          "1",
+          "1",
+          "1"
+        ],
+        "normed": [
+          "10",
+          "1",
+          "1",
+          "1",
+          "1"
+        ],
+        "nums": [
+          10.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "strategy": "numeric_cluster"
+      },
+      "idx": 99
+    }
+  ]
+}
