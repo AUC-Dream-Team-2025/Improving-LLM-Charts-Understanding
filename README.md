@@ -5,3 +5,4 @@ There are three folders:
 - Text2Struct Pipeline: contains the alternative pipeline discussed in the paper that uses Text2Struct instead of Chart2Table.
 
 - Additional Experiments: various other trained models and experiements that we tried while making our research.
+- 
